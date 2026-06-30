@@ -1,2 +1,2 @@
 [2] - Quarterly report is due today and is urgent.
-[0] - Regular standup meeting occurred with no blockers reported.
+[0] - Standup notes are regular with no blockers reported.

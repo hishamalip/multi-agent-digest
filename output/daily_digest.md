@@ -5,4 +5,4 @@
 ## Top Insights
 
 - **Priority 2**: - Quarterly report is due today and is urgent.
-- **Priority 0**: - Regular standup meeting occurred with no blockers reported.
+- **Priority 0**: - Standup notes are regular with no blockers reported.
