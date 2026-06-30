@@ -13,9 +13,10 @@ INPUT_FILE = "/data/ingested.txt"
 OUTPUT_FILE = "/data/summary.txt"
 
 # client = OpenAI()  # reads OPENAI_API_KEY from environment
+
+# OPENAI_API_KEY should be set in the .env file or environment variables for authentication
 client = OpenAI(
-    base_url="https://api.mistral.ai/v1",
-    
+    base_url="https://api.mistral.ai/v1"
 )
 
 
