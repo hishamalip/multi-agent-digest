@@ -351,38 +351,9 @@ cd agents/formatter
 python app.py
 ```
 
-### Adding New Agents
-
-1. Create a new directory under `agents/`
-2. Add `app.py` with your agent logic
-3. Create a `Dockerfile`
-4. Update `docker-compose.yml` with the new service
-5. Set dependencies appropriately
-
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 🙏 Acknowledgments
-
-- **OpenAI** - For providing the powerful LLM models
-- **Docker** - For containerization that makes this pipeline portable
-- **Python** - For the excellent standard library and ecosystem
-
----
-
-## 📞 Support
-
-For questions, issues, or feature requests, please open an issue on the GitHub repository.
-
----
-
-<div align="center">
-
-**Built with ❤️ and AI** | **Multi-Agent Digest System** | **v1.0.0**
-
-</div>
