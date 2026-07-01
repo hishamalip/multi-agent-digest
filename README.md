@@ -32,20 +32,21 @@ Multi-Agent Digest is a **modular, containerized pipeline** that processes multi
 ## 🏗️ Architecture
 
 ```
+┌─────────────────┐
+│   INPUT FILES   │
+└────────┬────────┘
+         │
+         ▼
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│                  │     │                  │     │                  │     │                  │
-│   📁 INPUT       │────▶│   INGESTOR      │────▶│   SUMMARIZER    │────▶│   PRIORITIZER   │
-│   FILES         │     │   Agent          │     │   Agent (LLM)    │     │   Agent          │
-│                  │     │                  │     │                  │     │                  │
-└─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
-                                                                           │
-                                                                           ▼
-┌─────────────────┐     ┌─────────────────┐
-│                  │     │                  │
-│   FORMATTER     │────▶│   📄 OUTPUT      │
-│   Agent         │     │   daily_digest.md│
-│                  │     │                  │
-└─────────────────┘     └─────────────────┘
+│    INGESTOR     │────►│   SUMMARIZER    │────►│   PRIORITIZER   │────►│    FORMATTER    │
+│      Agent      │     │   Agent (LLM)   │     │      Agent      │     │      Agent      │
+└─────────────────┘     └─────────────────┘     └─────────────────┘     └────────┬────────┘
+                                                                                 │
+                                                                                 ▼
+                                                                         ┌─────────────────┐
+                                                                         │      OUTPUT     │
+                                                                         │ daily_digest.md │
+                                                                         └─────────────────┘
 ```
 
 ---
