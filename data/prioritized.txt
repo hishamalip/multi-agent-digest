@@ -1,2 +1,13 @@
-[2] - Quarterly report is due today and is urgent.
-[0] - Standup notes are regular with no blockers reported.
+[1] - **Deadlines:**
+[1] - Quarterly report is due today.
+[0] ### Summary:
+[0] - Q1 report is due this Friday.
+[0] - **Action Items:**
+[0] - Review the updated API documentation.
+[0] - **Team Updates:**
+[0] - Sprint velocity is on track with no blockers reported.
+[0] - **AI News:**
+[0] - OpenAI released a new reasoning model.
+[0] - New EU AI Act regulations take effect in March.
+[0] - Google announced updates to their Gemini model family.
+[0] - A startup raised $50M for AI-powered code review tools.

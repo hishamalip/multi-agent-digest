@@ -1,11 +1,23 @@
 import os
 import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
-)
+import json
+import logging
+
+class JSONFormatter(logging.Formatter):
+    def format(self, record):
+        return json.dumps({
+            "timestamp": self.formatTime(record),
+            "level": record.levelname,
+            "agent": record.name,
+            "message": record.getMessage(),
+        })
+
+handler = logging.StreamHandler()
+handler.setFormatter(JSONFormatter())
 logger = logging.getLogger("ingestor")
+logger.addHandler(handler)
+logger.setLevel(logging.INFO)
 
 INPUT_DIR = "/data/input"
 OUTPUT_FILE = "/data/ingested.txt"

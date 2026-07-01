@@ -1,4 +1,17 @@
 
+--- meeting_notes.txt ---
+Team Standup Notes - Monday
+IMPORTANT: Deadline for Q1 report is this Friday.
+Action required: Review the updated API documentation.
+Sprint velocity is on track. No blockers reported.
+
+--- newsletter_ai.txt ---
+AI Weekly Roundup - January 2025
+OpenAI released a new reasoning model this week.
+URGENT: New EU AI Act regulations take effect in March.
+Google announced updates to their Gemini model family.
+A startup raised $50M for AI-powered code review tools.
+
 --- test.txt ---
 Urgent: quarterly report due today
 Regular standup notes, no blockers
