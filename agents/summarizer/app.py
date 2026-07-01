@@ -24,12 +24,7 @@ logger.setLevel(logging.INFO)
 INPUT_FILE = "/data/ingested.txt"
 OUTPUT_FILE = "/data/summary.txt"
 
-# client = OpenAI()  # reads OPENAI_API_KEY from environment
-
-# OPENAI_API_KEY should be set in the .env file or environment variables for authentication
-client = OpenAI(
-    base_url="https://api.mistral.ai/v1"
-)
+client = OpenAI()  # reads OPENAI_API_KEY from environment
 
 
 SYSTEM_PROMPT = (
@@ -45,17 +40,8 @@ def summarize(text, retries=MAX_RETRIES):
     """Call the LLM API with retry logic for rate limits."""
     for attempt in range(retries):
         try:
-            # response = client.chat.completions.create(
-            #     model="gpt-4o-mini",
-            #     messages=[
-            #         {"role": "system", "content": SYSTEM_PROMPT},
-            #         {"role": "user", "content": text[:8000]}
-            #     ],
-            #     max_tokens=1000,
-            #     temperature=0.3,
-            # )
             response = client.chat.completions.create(
-                model="mistral-medium-latest",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": text[:8000]}
